@@ -1,0 +1,7 @@
+{
+  "id": "button-primary",
+  "name": "Primary Button",
+  "type": "button",
+  "tags": ["button", "primary", "rounded", "blue"],
+  "code": "export default function PrimaryButton({ children, onClick }) {\n  return (\n    <button\n      onClick={onClick}\n      className=\"bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-200 ease-in-out transform hover:scale-105 shadow-md\"\n    >\n      {children}\n    </button>\n  );\n}"
+}

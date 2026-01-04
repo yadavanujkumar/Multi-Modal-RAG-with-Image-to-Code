@@ -1,0 +1,7 @@
+{
+  "id": "navbar-main",
+  "name": "Main Navigation Bar",
+  "type": "navbar",
+  "tags": ["navbar", "header", "navigation", "responsive"],
+  "code": "export default function Navbar({ logo, links }) {\n  return (\n    <nav className=\"bg-white shadow-md\">\n      <div className=\"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8\">\n        <div className=\"flex justify-between items-center h-16\">\n          <div className=\"flex-shrink-0\">\n            <img className=\"h-8 w-auto\" src={logo} alt=\"Logo\" />\n          </div>\n          <div className=\"hidden md:block\">\n            <div className=\"ml-10 flex items-baseline space-x-4\">\n              {links.map((link, index) => (\n                <a\n                  key={index}\n                  href={link.href}\n                  className=\"text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors\"\n                >\n                  {link.label}\n                </a>\n              ))}\n            </div>\n          </div>\n        </div>\n      </div>\n    </nav>\n  );\n}"
+}
