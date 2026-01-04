@@ -1,0 +1,7 @@
+{
+  "id": "hero-section",
+  "name": "Hero Section with CTA",
+  "type": "section",
+  "tags": ["hero", "landing", "cta", "centered"],
+  "code": "export default function HeroSection({ title, subtitle, ctaText, ctaLink }) {\n  return (\n    <div className=\"bg-gradient-to-r from-blue-600 to-purple-600 py-20\">\n      <div className=\"max-w-4xl mx-auto text-center px-4\">\n        <h1 className=\"text-5xl font-bold text-white mb-6\">{title}</h1>\n        <p className=\"text-xl text-blue-100 mb-8\">{subtitle}</p>\n        <a\n          href={ctaLink}\n          className=\"inline-block bg-white text-blue-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors shadow-lg\"\n        >\n          {ctaText}\n        </a>\n      </div>\n    </div>\n  );\n}"
+}
