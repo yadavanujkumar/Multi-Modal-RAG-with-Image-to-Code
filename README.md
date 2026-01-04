@@ -308,33 +308,13 @@ playwright install chromium
 - GPT-4o API costs apply
 - Complex interactions may need manual refinement
 
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-
-- Additional component library entries
-- Support for other frameworks (Vue, Angular)
-- More sophisticated validation metrics
-- UI mockup preprocessing
-- Batch processing capabilities
 
 ## 📄 License
 
 See [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- OpenAI for GPT-4o Vision capabilities
-- Pinecone for vector database infrastructure
-- Playwright team for browser automation
-- Tailwind CSS for utility-first styling
 
 ## 📧 Support
 
 For issues and questions:
 - GitHub Issues: [Create an issue](https://github.com/yadavanujkumar/Multi-Modal-RAG-with-Image-to-Code/issues)
 - Documentation: See individual module docstrings
-
----
-
-**Built with ❤️ using GPT-4o Vision, Pinecone, and Playwright**
