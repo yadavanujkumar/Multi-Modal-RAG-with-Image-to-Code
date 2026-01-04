@@ -142,7 +142,7 @@ class MultiModalRAGSystem:
         print(f"\n📊 Pipeline Statistics:")
         print(f"  • Visual queries extracted: {len(result.get('queries', []))}")
         print(f"  • Components retrieved: {result.get('retrieved_components', 0)}")
-        print(f"  • Code lines generated: {len(result['generated_code'].split(chr(10)))}")
+        print(f"  • Code lines generated: {len(result['generated_code'].split('\n'))}")
         
         if result.get('validation'):
             val = result['validation']

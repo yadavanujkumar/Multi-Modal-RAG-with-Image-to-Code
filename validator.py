@@ -50,7 +50,7 @@ class CodeValidator:
                 start = react_code.index("export default function") + 23
                 end = react_code.index("(", start)
                 component_name = react_code[start:end].strip()
-            except:
+            except (ValueError, IndexError):
                 pass
         
         # Create HTML with React, ReactDOM, and Tailwind CDN
@@ -303,7 +303,7 @@ Notes: [your analysis]"""
                     try:
                         score_str = line.split(':')[1].strip().split('/')[0]
                         score = float(score_str) / 100.0
-                    except:
+                    except (ValueError, IndexError):
                         pass
             
             return {

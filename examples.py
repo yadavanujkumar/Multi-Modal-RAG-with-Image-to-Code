@@ -225,7 +225,7 @@ def example_6_programmatic_api():
         analysis['full_analysis'],
         components
     )
-    print(f"  Generated {len(code.split(chr(10)))} lines of code")
+    print(f"  Generated {len(code.split('\n'))} lines of code")
     
     # Save result
     output_path = Path("./output/programmatic_component.jsx")
